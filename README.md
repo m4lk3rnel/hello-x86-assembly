@@ -8,3 +8,9 @@
 - https://en.wikipedia.org/wiki/I386
 - https://man7.org/linux/man-pages/man2/write.2.html
 - ChatGPT :)
+
+#### Can be assembled with NASM (Netwide Assembler) and linked with `ld`
+```
+nasm -f elf32 main.asm -o main.o
+ld -m elf_i386 -o main
+```
